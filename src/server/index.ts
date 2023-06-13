@@ -16,9 +16,10 @@ mongoose.connect(`mongodb+srv://${DB_USER}:${DB_PASSWORD}@express-todo-app.2yhjo
 const HOST = "127.0.0.1";
 const PORT = 3001;
 
-
 const app = express();
 
 app.use(express.static(path.resolve(__dirname, "public")));
+
+app.get("*", (req, res) => res.sendFile(path.resolve(__dirname, "public/index.html")));
 
 app.listen(PORT, HOST, () => console.log(`Server listening on http://${HOST}:${PORT}`));
