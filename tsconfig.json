@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+		"rootDir": "./src",
+		"outDir": "./dist",
+		"target": "ESNext",
+		"module": "ESNext",
+		"noImplicitAny": true,
+		"jsx": "react-jsx",
+		"strict": true,
+		"moduleResolution": "node",
+		"allowSyntheticDefaultImports": true,
+		"baseUrl": "./src",
+		"sourceMap": true,
+		"noImplicitOverride": true,
+		"paths": {
+			"@app/*": [
+				"./app/*"
+			],
+			"@server/*": [
+				"./server/*"
+			]
+		}
+	}
+}
